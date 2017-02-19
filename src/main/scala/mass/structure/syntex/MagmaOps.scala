@@ -19,5 +19,4 @@ trait MagmaSyntax[F]  {
   def F: Magma[F]
 
   def product(f1: F, f2: => F)(implicit F: Magma[F]): F = F.product(f1, f2)
-
 }
